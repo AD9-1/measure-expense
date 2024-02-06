@@ -1,0 +1,99 @@
+.App {
+  position: absolute;
+  top: 30%;
+  left: 25%;
+  width: 50vw;
+  text-align: center;
+  padding-bottom: 50px;
+
+  h2 {
+    font-size: 36px;
+    margin-bottom: 0;
+  }
+  &__balance {
+    color: #5824a58d;
+  }
+  &__showbalance {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 1px 1px 1px 1px #08a24b;
+    width: 50%;
+    position: relative;
+    left: 25%;
+  }
+
+  &__history {
+    position: relative;
+    left: 25%;
+
+    &--heading {
+      margin-top: 15px;
+      text-align: left;
+      border-bottom: 1px solid #888888;
+      width: 50%;
+      padding-bottom: 10px;
+    }
+    .history-list {
+      padding: 0;
+      text-align: left;
+      font-size: 15px;
+      list-style: none;
+      width: 53%;
+      &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: azure;
+        height: 2rem;
+        box-shadow: 3px 3px 3px #888888;
+        padding-right: 15px;
+        border-bottom: 1px dashed;
+        margin-bottom: 2px;
+        .minus__des {
+          width: 50%;
+          text-align: left;
+        }
+        .minus__amt {
+          width: 30%;
+          text-align: right;
+        }
+        .delete-btn {
+          width: 20%;
+          border: none;
+          cursor: pointer;
+          color: red;
+        }
+      }
+    }
+  }
+  &__transaction {
+    width: 50%;
+    position: relative;
+    left: 25%;
+    text-align: left;
+  }
+  &__header {
+    width: 50%;
+    position: relative;
+    text-align: left;
+    left: 25%;
+    margin-bottom: 0;
+  }
+  &__input {
+    width: 50%;
+    position: relative;
+  }
+  &__button {
+    width: 50%;
+    position: relative;
+    left: 25%;
+    button {
+      margin-top: 15px;
+      width: 100%;
+      background-color: #5824a5b4;
+      color: white;
+      padding: 3px;
+    }
+  }
+}
